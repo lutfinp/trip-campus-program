@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane fx:id="scenePane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ppbo_ta.Hasil">
+    <children>
+        <VBox fx:id="vBox1" alignment="CENTER" prefHeight="367.0" prefWidth="664.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <StackPane fx:id="topPane" prefHeight="394.0" prefWidth="664.0">
+                    <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="389.0" prefWidth="664.0">
+                            <children>
+                                <StackPane fx:id="imagePane" alignment="TOP_CENTER">
+                                    <children>
+                                        <ImageView fitHeight="93.0" fitWidth="168.0" pickOnBounds="true" StackPane.alignment="TOP_CENTER">
+                                            <image>
+                                                <Image url="@logo.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </StackPane>
+                                <Label fx:id="asalLabel" alignment="CENTER_RIGHT" />
+                                <StackPane fx:id="thirdPane">
+                                    <children>
+                                        <Rectangle fx:id="hasilRectangle" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="100.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
+                                        <Label fx:id="kendaraanLabel" maxWidth="-Infinity" StackPane.alignment="CENTER">
+                                            <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </padding>
+                                        </Label>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" />
+                                    </VBox.margin>
+                                </StackPane>
+                            <Label fx:id="detailLabel" VBox.vgrow="ALWAYS">
+                                <VBox.margin>
+                                    <Insets bottom="8.0" />
+                                </VBox.margin>
+                        </Label>
+                            </children>
+                        </VBox>
+                    </children>
+                </StackPane>
+                <Button fx:id="doneButton" mnemonicParsing="false" onAction="#logout" text="Done">
+                    <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                    </VBox.margin></Button>
+            </children>
+            <padding>
+                <Insets bottom="10.0" />
+            </padding>
+        </VBox>
+    </children>
+</AnchorPane>

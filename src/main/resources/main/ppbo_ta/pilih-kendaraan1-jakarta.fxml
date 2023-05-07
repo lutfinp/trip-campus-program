@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ppbo_ta.PilihKendaraan1Jakarta">
+    <children>
+        <VBox fx:id="vBox1" alignment="CENTER" prefHeight="367.0" prefWidth="664.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <StackPane fx:id="topPane" prefHeight="394.0" prefWidth="664.0">
+                    <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="389.0" prefWidth="664.0">
+                            <children>
+                                <StackPane fx:id="imagePane" alignment="TOP_CENTER">
+                                    <children>
+                                        <ImageView fitHeight="93.0" fitWidth="168.0" pickOnBounds="true" StackPane.alignment="TOP_CENTER">
+                                            <image>
+                                                <Image url="@logo.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </StackPane>
+                                <Label fx:id="asalLabel" alignment="CENTER_RIGHT" />
+                                <StackPane fx:id="thirdPane">
+                                    <children>
+                                        <Rectangle fx:id="midRectangle" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="78.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                                        <Label fx:id="kendaraanLabel" StackPane.alignment="TOP_CENTER">
+                                            <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </padding>
+                                        </Label>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" />
+                                    </VBox.margin>
+                                </StackPane>
+                                <StackPane alignment="TOP_LEFT">
+                                    <children>
+                                        <Label fx:id="tanyaLabel" alignment="TOP_CENTER" text="Masukkan pilihan kendaraan pertama anda" StackPane.alignment="CENTER_LEFT">
+                                            <StackPane.margin>
+                                                <Insets left="50.0" />
+                                            </StackPane.margin>
+                                        </Label>
+                                        <ChoiceBox fx:id="pilihKendaraan" StackPane.alignment="CENTER_RIGHT">
+                                            <StackPane.margin>
+                                                <Insets right="110.0" />
+                                            </StackPane.margin>
+                                        </ChoiceBox>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" />
+                                    </VBox.margin>
+                                </StackPane>
+                            </children>
+                        </VBox>
+                    </children>
+                </StackPane>
+                <Label fx:id="detailLabel" textFill="WHITE" VBox.vgrow="ALWAYS">
+                    <VBox.margin>
+                        <Insets bottom="8.0" />
+                    </VBox.margin></Label>
+                <Label fx:id="tanyaLabel2" />
+                <StackPane prefHeight="150.0" prefWidth="200.0">
+                    <children>
+                        <Button fx:id="yesButton" mnemonicParsing="false" onAction="#switchToKendaraan2" text="Ya" StackPane.alignment="CENTER_LEFT">
+                            <StackPane.margin>
+                                <Insets left="200.0" />
+                            </StackPane.margin>
+                        </Button>
+                        <Button fx:id="noButton" mnemonicParsing="false" onAction="#switchToHasil" snapToPixel="false" text="Tidak" StackPane.alignment="CENTER_RIGHT">
+                            <StackPane.margin>
+                                <Insets right="200.0" />
+                            </StackPane.margin>
+                        </Button>
+                    </children>
+                </StackPane>
+            </children>
+            <padding>
+                <Insets bottom="10.0" />
+            </padding>
+        </VBox>
+    </children>
+</AnchorPane>

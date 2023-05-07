@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('poppins.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url('Poppins-SemiBold.ttf');
+}
+
+.root{
+    -fx-background-color: #02234C;
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 12;
+}
+
+#midRectangle{
+    -fx-border-radius: 27;
+    -fx-border-width: 5;
+    -fx-background-radius: 30;
+}
+
+#imagePane{
+    -fx-background-color: #DBF0F6;
+    -fx-background-radius: 0 0 40 40;
+}
+
+#topPane{
+    -fx-background-color: #F5F5F5;
+    -fx-background-radius: 0 0 40 40;
+}
+
+#detailLabel{
+    -fx-text-background-color: #FFFFFF;
+}
+
+#doneButton{
+    -fx-border-radius: 100px;
+    -fx-background-color: #FFFFFF;
+    -fx-pref-width: 125px;
+    -fx-text-background-color: #02234C;
+    -fx-background-radius: 30;
+}

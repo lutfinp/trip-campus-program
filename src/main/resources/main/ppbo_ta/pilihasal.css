@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('poppins.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url('Poppins-SemiBold.ttf');
+}
+
+.root{
+    -fx-background-color: #DAEFF5FC;
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 12;
+}
+
+#myChoiceBox{
+    -fx-border-radius: 23px;
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 30;
+}
+
+#berangkatButton{
+    -fx-border-radius: 100px;
+    -fx-background-color: #02234C;
+    -fx-pref-width: 125px;
+    -fx-background-radius: 30;
+}

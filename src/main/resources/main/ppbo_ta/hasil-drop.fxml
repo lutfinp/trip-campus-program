@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="firstLocation" fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8-map-pin-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="secondLocation" fitHeight="50.0" fitWidth="50.0" layoutX="175.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8-map-pin-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="thirdLocation" fitHeight="50.0" fitWidth="50.0" layoutX="351.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8-map-pin-50.png" />
+         </image>
+      </ImageView>
+      <CubicCurve controlX1="-140.0" controlX2="-101.0" controlY1="-102.0" controlY2="4.0" endX="-48.0" endY="-55.0" fill="#1f93ff00" layoutX="238.0" layoutY="143.0" startX="-192.0" startY="-61.0" stroke="BLACK" />
+      <CubicCurve controlX1="3.0" controlX2="28.0" controlY1="-71.0" controlY2="18.0" endX="95.0" endY="-14.0" fill="#1f93ff00" layoutX="270.0" layoutY="101.0" startX="-58.0" startY="-26.0" stroke="BLACK" />
+      <Label fx:id="asalLabel" layoutX="25.0" layoutY="108.0" text="Label" />
+      <Label fx:id="pointPertama" layoutX="186.0" layoutY="108.0" text="Label" />
+      <Label fx:id="pointKedua" layoutX="362.0" layoutY="106.0" text="Label" />
+      <Label fx:id="kendaraanPertama" layoutX="106.0" layoutY="105.0" text="Label" />
+      <Label fx:id="kendaraanKedua" layoutX="275.0" layoutY="98.0" text="Label" />
+      <Button fx:id="doneButton" layoutX="250.0" layoutY="301.0" mnemonicParsing="false" text="Button" />
+      <StackPane layoutX="176.0" layoutY="151.0" prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="totalLabel" text="Label" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="126.0" stroke="BLACK" strokeType="INSIDE" width="195.0" />
+         </children>
+      </StackPane>
+      <ImageView fx:id="lastLocation" fitHeight="50.0" fitWidth="50.0" layoutX="537.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8-map-pin-50.png" />
+         </image>
+      </ImageView>
+      <CubicCurve controlX1="20.0" controlX2="58.0" controlY1="-53.0" controlY2="55.0" endX="111.0" endY="-3.0" fill="#1f93ff00" layoutX="442.0" layoutY="88.0" startX="-55.0" startY="-9.0" stroke="BLACK" />
+      <Label fx:id="kendaraanKetiga" layoutX="456.0" layoutY="99.0" text="Label" />
+      <Label fx:id="pointKetiga" layoutX="548.0" layoutY="100.0" text="Label" />
+   </children>
+</AnchorPane>
