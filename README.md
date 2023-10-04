@@ -1,0 +1,1 @@
+Tripus is an application that helps users identify which public transportation options they can use to reach UPNVJ campus based on their point of origin. This application is developed using the Java programming language and Java GUI.
